@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+   frontend:
+    #  image: php:drugdiscovery-base
+    #  container_name: "drugdiscovery-base"
+     build:
+       context: .
+       dockerfile: Dockerfile
+     environment:
+       - REST_API_PROXY_SERVER=localhost
+       - SERVER_HOST=0.0.0.0
+     restart: always
+     networks:
+       - rest-network
+     ports:
+       - "80:80"
+    #  depends_on:
+    #    - redial
+
+  #  redial:
+  #     # image: sirimullalab/redial-2020:latest
+  #     # container_name: "sirimulla-redial"
+  #     build: 
+  #       context: .
+  #     restart: always
+  #     networks: 
+  #       - rest-network
+
+networks:
+   rest-network:
