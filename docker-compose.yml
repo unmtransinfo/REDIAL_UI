@@ -8,8 +8,8 @@ services:
        context: .
        dockerfile: Dockerfile
      environment:
-       - REST_API_PROXY_SERVER=localhost
-       - SERVER_HOST=0.0.0.0
+       - REST_API_PROXY_SERVER=${REST_API_PROXY_SERVER}
+       - SERVER_HOST=${SERVER_HOST}
      restart: always
      networks:
        - rest-network

@@ -13,7 +13,7 @@
     <div class="container">
       <div class="row">
         <div class="span7 offset1">
-          <form enctype="multipart/form-data" action="/redial/index2.php" method="POST">
+          <form enctype="multipart/form-data" target="_blank" action="/index2.php" method="POST">
 
             <div class="ui container left aligned">
                 <a class="ui grey label"><h3>A portal for estimating Anti-SARS-CoV-2 activities</h3></a>

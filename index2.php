@@ -49,7 +49,7 @@
         $smiles = $_POST['smiles'];
         $server = $_ENV['REST_API_PROXY_SERVER'];
 
-        $url = 'http://'.$server.'/redial/predict';
+        $url = 'http://'.$server.'/predict';
         $data = array('smiles' => $smiles);
 
         // use key 'http' even if you send the request to https://...
@@ -60,9 +60,10 @@
                 'content' => http_build_query($data)
             )
         );
+        
         $context  = stream_context_create($options);
         $result = file_get_contents($url, false, $context);
-
+        
         if ($result == FALSE){
           echo "ERROR: COULDN'T MAKE THE PREDICTIONS. TRY AGAIN.";
           include "error.php";
