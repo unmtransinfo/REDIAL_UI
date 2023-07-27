@@ -14,7 +14,7 @@ services:
      networks:
        - rest-network
      ports:
-       - "8000:8000"
+       - "80:80"
     #  depends_on:
     #    - redial
 
