@@ -49,7 +49,7 @@
         $smiles = $_POST['smiles'];
         $server = $_ENV['REST_API_PROXY_SERVER'];
 
-        $url = 'http://'.$server.'/predict';
+        $url = 'https://'.$server.'/predict';
         $data = array('smiles' => $smiles);
 
         // use key 'http' even if you send the request to https://...
