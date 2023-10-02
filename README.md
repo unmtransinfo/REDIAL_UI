@@ -1,5 +1,5 @@
 # REDIAL_UI
-This repository contains frontend code for [REDIAL](https://github.com/unmtransinfo/REDIAL)
+This repository contains frontend code for [REDIAL](https://github.com/unmtransinfo/REDIAL)<br/>
 - Website: http://drugcentral.org/Redial
 
 ## Installation with Docker
