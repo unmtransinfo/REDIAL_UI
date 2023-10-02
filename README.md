@@ -1,5 +1,6 @@
 # REDIAL_UI
-This repository contains frontend code for [REDIAL](https://github.com/unmtransinfo/REDIAL)- Website: http://drugcentral.org/Redial
+This repository contains frontend code for [REDIAL](https://github.com/unmtransinfo/REDIAL)
+- Website: http://drugcentral.org/Redial
 
 ## Installation with Docker
 To run the application on your system, you need docker installed. You can run the app directly using docker by using the following command to do so
